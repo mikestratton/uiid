@@ -7,4 +7,6 @@ Description: Autonomous Algorithms that Mine Data and Improve Results, Guided by
   
 Challenge: [Data Concierge](https://2017.spaceappschallenge.org/challenges/ideate-and-create/data-concierge/details)  
     
-Team: [User Influenced Intelligent Data](https://2017.spaceappschallenge.org/challenges/ideate-and-create/data-concierge/teams/user-influenced-intelligent-data/stream)  
+Team: [User Influenced Intelligent Data](https://2017.spaceappschallenge.org/challenges/ideate-and-create/data-concierge/teams/user-influenced-intelligent-data/stream)   
+
+Project Management: [Public Trello Board](https://trello.com/b/sp819hHq/space-apps-2017)  
