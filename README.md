@@ -9,7 +9,7 @@ Conglomerate of work from both virtual(World Wide) and local(Cleveland, Ohio) pa
   
 Focal point: "Your challenge is to design an artificial intelligence tool to help Earth science data consumers navigate NASA’s Earth science datasets and resources!"
 
-Solutions:
+Solutions:  
 Chat Bot: A.I. Virtual Assistant that Evolves Contingent on User Metrics [Google Assistant](https://developers.google.com/actions/)  
   
 Challenge: [Data Concierge](https://2017.spaceappschallenge.org/challenges/ideate-and-create/data-concierge/details)  
