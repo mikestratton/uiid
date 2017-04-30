@@ -1,0 +1,36 @@
+{
+  "userSays": [
+    {
+      "id": "144acab9-13b2-41fc-beae-7d419cdfa28b",
+      "data": [
+        {
+          "text": "I am a hiker"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "7a343817-9422-46c3-a78a-ec8178618b63",
+  "name": "I am a hiker",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

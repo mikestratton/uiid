@@ -1,0 +1,36 @@
+{
+  "userSays": [
+    {
+      "id": "4890c11e-1fb1-43cd-aa44-5702df2ff8ee",
+      "data": [
+        {
+          "text": "I am a farmer"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "da8617f2-7e7d-47e1-8660-6523cc991f61",
+  "name": "I am a farmer",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Have you heard of precision farming? Learn more here: https://earthobservatory.nasa.gov/Features/PrecisionFarming/"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
