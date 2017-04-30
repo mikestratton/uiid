@@ -1,0 +1,97 @@
+<!---
+Filename: index.html
+Authors: Sam Stein, Zac Morgan
+Purpose: 
+Date: 4/29/2017
+--->
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--    JQuery -->
+    <script type='text/javascript' src='js/jquery/jquery-3.1.1.min.js'></script>
+
+    <!--    Bootstrap -->
+    <script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
+
+    <!--    Material Design Lite    -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/mdl/material.min.css"/>
+    <script src="js/mdl/material.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/Generic.css"/>
+
+    <!-- Tab Icon -->
+   <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <title>User Influenced Intelligent Data</title>
+
+
+<script type="text/javascript">
+function sendAjax(){
+	lowercaseQuery=document.getElementById('query').value.toLowerCase();
+	chosenProfession=document.getElementById('profession').value;
+    $.ajax({
+        type: "GET",
+        url: "http://nasa.flightdoor.com:8000/recommend/hiker/",
+        data: {"User_Type":"hiker"},
+        cache: false,
+        success: function(json){
+            alert("GG");
+        },
+        fail: function(json){
+            alert("fail");
+        }
+    });
+
+}
+</script>
+
+</head>
+<body>
+<br>
+    <div style="text-align: center;"><img style="width: 200px;" src="UIID-logo.png" width="100%"/></div>
+    <div class="row-centered">
+        <div class="mdl-card mdl-shadow--2dp col-centered">
+            <div class="mdl-card__title">
+                <h2 style="text-align: center;">User Influenced Intelligent Data</h2>
+            </div>
+            <form name="requestForm" type="actionForm" style="display: inline" id="requestForm">
+
+    			<div style="text-align: center;"><img style="width: 400px;" src="avatar.png" width="100%"/></div>
+                <div class="mdl-card__actions container-fluid mdl-card--border">
+                <div class="col-xs-12">
+                        <select class="mdl-list mdl-js-list mdl-list--raised mdl-list--colored full-width dropdown-custom"
+                                name="profession"
+                                size="1"
+                                id="profession">
+                            <option disabled selected>Profession</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="geotechnician">Geotechnician</option>
+                            <option value="meteorologist">Meteorologist</option>
+                            <option value="hiker">Hiker</option>
+                        </select>
+                </div>
+                <div class="col-xs-12">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-width">
+                        <input class="mdl-textfield__input" name="query" type="text" id="query" VALUE=""/>
+                        <label class="mdl-textfield__label">What can I help you find?</label>
+                    </div>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect" type="submit" onclick="sendAjax()">Submit</a>
+                </div>
+                <div class="col-xs-12">
+                    <div class="mdl-card__actions mdl-card-footer">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
