@@ -4,7 +4,7 @@ from uiid.settings.database_dev import *
 ALLOWED_HOSTS = ['*']
 DEBUG = True
 
-PROJECT_DIR = '/opt/uiid/uiid/'
+PROJECT_DIR = '/opt/uiid/uiid/uiid/'
 
 SECRET_KEY = 'key'
 

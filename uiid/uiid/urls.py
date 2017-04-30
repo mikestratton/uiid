@@ -11,6 +11,7 @@ admin.autodiscover()
 
 urlpatterns = [
 	url(r'^admin/', include(admin.site.urls)),
+    url(r'^recommend/(?P<user_type>.+)/$', views.recommend),
 	url(r'^$', views.index),
 ]
 
